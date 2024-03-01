@@ -20,6 +20,11 @@ twine upload dist/*
 
 ## Usage
 
+### Rate Limits
+Current rate limits are set at 1000 `GET` requests per user each minute and 5 `POST` requests per user each minute for `POST` requests. 
+
+_Rate limits are subject to change after our Alpha period._
+
 ### Authentication
 
 To utilize any functions within this package, authentication via your API key is necessary. Simply invoke the `login` function from the `token` module, providing your API key as an argument.
