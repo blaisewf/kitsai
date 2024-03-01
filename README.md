@@ -18,7 +18,7 @@ pip install kitsai
 To utilize any functions within this package, authentication via your API key is necessary. Simply invoke the `login` function from the `token` module, providing your API key as an argument.
 
 ```python
-from kitsai.token import login
+from kitsai import login
 
 api_key = "YOUR_API_KEY_HERE"
 login(api_key)
@@ -33,7 +33,7 @@ _You can generate an API key by signing up on the https://app.kits.ai/api-access
 Retrieve a list of available voice models.
 
 ```python
-from kitsai.voice_models import fetch_voice_models
+from kitsai import fetch_voice_models
 
 voice_models = fetch_voice_models(order="asc", page=1, per_page=10, my_models=False, instruments=False)
 ```
@@ -43,7 +43,7 @@ voice_models = fetch_voice_models(order="asc", page=1, per_page=10, my_models=Fa
 Fetch details of a specific voice model using its ID.
 
 ```python
-from kitsai.voice_models import fetch_voice_model_by_id
+from kitsai import fetch_voice_model_by_id
 
 voice_model_id = 123
 voice_model = fetch_voice_model_by_id(voice_model_id)
@@ -56,7 +56,7 @@ voice_model = fetch_voice_model_by_id(voice_model_id)
 Initiate a voice conversion task with specified parameters.
 
 ```python
-from kitsai.voice_conversions import create_voice_conversion
+from kitsai import create_voice_conversion
 
 response = create_voice_conversion(
     voice_model_id=123,
@@ -84,7 +84,7 @@ response = create_voice_conversion(
 Retrieve details of a specific voice conversion task using its ID.
 
 ```python
-from kitsai.voice_conversions import fetch_voice_conversion_by_id
+from kitsai import fetch_voice_conversion_by_id
 
 voice_conversion = fetch_voice_conversion_by_id("JOB_ID_HERE")
 ```
@@ -94,7 +94,7 @@ voice_conversion = fetch_voice_conversion_by_id("JOB_ID_HERE")
 Retrieve a list of voice conversion tasks.
 
 ```python
-from kitsai.voice_conversions import fetch_voice_conversions
+from kitsai import fetch_voice_conversions
 
 voice_conversions = fetch_voice_conversions(order="asc", page=1, per_page=10)
 ```
@@ -106,7 +106,7 @@ voice_conversions = fetch_voice_conversions(order="asc", page=1, per_page=10)
 Initiate a vocal separation task with an audio input.
 
 ```python
-from kitsai.vocal_separations import create_vocal_separation
+from kitsai import create_vocal_separation
 
 response = create_vocal_separation(
     sound_file=open('input.wav', 'rb')
@@ -118,7 +118,7 @@ response = create_vocal_separation(
 Retrieve details of a specific vocal separation task using its ID.
 
 ```python
-from kitsai.vocal_separations import fetch_vocal_separation_by_id
+from kitsai import fetch_vocal_separation_by_id
 
 vocal_separation = fetch_vocal_separation_by_id("JOB_ID_HERE")
 ```
@@ -128,7 +128,7 @@ vocal_separation = fetch_vocal_separation_by_id("JOB_ID_HERE")
 Retrieve a list of vocal separation tasks.
 
 ```python
-from kitsai.vocal_separations import fetch_vocal_separations
+from kitsai import fetch_vocal_separations
 
 vocal_separations = fetch_vocal_separations(order="asc", page=1, per_page=10)
 ```
@@ -140,7 +140,7 @@ vocal_separations = fetch_vocal_separations(order="asc", page=1, per_page=10)
 Generate text-to-speech output using a specified voice model and input text.
 
 ```python
-from kitsai.tts import create_tts
+from kitsai import create_tts
 
 response = create_tts(
     voice_model_id=123,
@@ -153,7 +153,7 @@ response = create_tts(
 Retrieve details of a specific text-to-speech task using its ID.
 
 ```python
-from kitsai.tts import fetch_tts_by_id
+from kitsai import fetch_tts_by_id
 
 tts_job = fetch_tts_by_id("JOB_ID_HERE")
 ```
@@ -163,12 +163,10 @@ tts_job = fetch_tts_by_id("JOB_ID_HERE")
 Retrieve a list of text-to-speech tasks.
 
 ```python
-from kitsai.tts import fetch_tts
+from kitsai import fetch_tts
 
 tts_jobs = fetch_tts(order="asc", page=1, per_page=10)
 ```
-
-Ensure to replace placeholders with actual values according to your use case. These examples illustrate how to utilize each functionality provided by the kitsai package.
 
 ## License
 
