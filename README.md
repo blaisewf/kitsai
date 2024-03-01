@@ -11,6 +11,13 @@ pip install kitsai
 
 ```
 
+## Publish to PyPi
+
+```bash
+python setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
 ## Usage
 
 ### Authentication

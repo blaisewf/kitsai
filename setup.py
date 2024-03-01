@@ -9,7 +9,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 
 setup(
     name="kitsai",
-    version="0.0.2",
+    version="0.0.3",
     author="Blaise",
     author_email="iahispano0@gmail.com",
     description="Unofficial package to easily interact with the Kits.AI API",
@@ -17,6 +17,7 @@ setup(
     long_description_content_type="text/markdown",
     license="Attribution-NonCommercial 4.0 International",
     packages=find_packages(),
+    package_data={"kitsai": ["*/*.py", "*/*/*.py"]},
     url="https://github.com/blaise-tk/kitsai",
     keywords=["python", "audio", "vc", "ai", "rvc", "kits"],
     classifiers=[
