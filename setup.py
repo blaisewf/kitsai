@@ -9,7 +9,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 
 setup(
     name="kitsai",
-    version="0.0.1",
+    version="0.0.2",
     author="Blaise",
     author_email="iahispano0@gmail.com",
     description="Unofficial package to easily interact with the Kits.AI API",
@@ -19,7 +19,7 @@ setup(
     # install_requires=[],
     keywords=["python", "audio", "vc", "ai", "rvc", "kits"],
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: Release",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: MacOS :: MacOS X",
