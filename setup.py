@@ -15,8 +15,9 @@ setup(
     description="Unofficial package to easily interact with the Kits.AI API",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    license="Attribution-NonCommercial 4.0 International",
     packages=find_packages(),
-    # install_requires=[],
+    url="https://github.com/blaise-tk/kitsai",
     keywords=["python", "audio", "vc", "ai", "rvc", "kits"],
     classifiers=[
         "Development Status :: Release",
