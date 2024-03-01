@@ -10,7 +10,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 setup(
     name="kitsai",
     version="0.0.1",
-    author="Blaise (Pascal Aznar)",
+    author="Blaise",
     author_email="iahispano0@gmail.com",
     description="Unofficial package to easily interact with the Kits.AI API",
     long_description=long_description,
